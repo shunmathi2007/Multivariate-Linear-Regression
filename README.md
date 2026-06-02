@@ -23,13 +23,29 @@ To write a python program to implement multivariate linear regression and predic
 ## Program:
 ```
 
+Exp10-
+#DEVELOPED BY : Nivetha N
+#REGISTER NUMBER :212225040290
 
+import pandas as pd
+from sklearn import linear_model
+df=pd.read_csv("car (1).csv")
+x=df[["Volume","Weight"]]
+y=df["CO2"]
+regression=linear_model.LinearRegression()
+regression.fit(x,y)
+print(regression.coef_)
+print(regression.intercept_)
+print(regression.predict([[3300,1300]]))
 
 
 
 
 ```
 ## Output:
+<img width="412" height="104" alt="Screenshot 2026-06-02 003528" src="https://github.com/user-attachments/assets/746e4623-d94b-4095-9421-fdd5f0933bf9" />
+
+
 
 ### Insert your output
 
